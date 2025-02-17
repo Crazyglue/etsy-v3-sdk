@@ -6,17 +6,33 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "etsy",
+    "sdk",
+    "openapi",
+    "typescript"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "generate": "openapi-generator-cli generate -o src -i ./etsy-v3-openapi.json -g typescript-fetch --skip-validate-spec",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Crazyglue/etsy-v3-sdk.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eric Dobroveanu <edbz2k2@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Crazyglue/etsy-v3-sdk/issues"
   },

@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Etsy V3 API SDK",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "build": "tsc",
     "generate": "openapi-generator-cli generate -o src -i ./etsy-v3-openapi.json -g typescript-fetch --skip-validate-spec",

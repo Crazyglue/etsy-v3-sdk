@@ -2,7 +2,7 @@
   "name": "etsy-v3-sdk",
   "version": "0.1.0",
   "description": "Etsy V3 API SDK",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "generate": "openapi-generator-cli generate -o src -i ./etsy-v3-openapi.json -g typescript-fetch --skip-validate-spec",

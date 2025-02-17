@@ -1,0 +1,25 @@
+{
+  "name": "etsy-v3-sdk",
+  "version": "0.1.0",
+  "description": "Etsy V3 API SDK",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "generate": "openapi-generator-cli generate -o src -i ./etsy-v3-openapi.json -g typescript-fetch --skip-validate-spec",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crazyglue/etsy-v3-sdk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crazyglue/etsy-v3-sdk/issues"
+  },
+  "homepage": "https://github.com/Crazyglue/etsy-v3-sdk#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.16.3",
+    "typescript": "^5.7.3"
+  }
+}

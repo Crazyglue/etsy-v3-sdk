@@ -1,4 +1,3 @@
-.openapi-generator-ignore
 apis/BuyerTaxonomyApi.ts
 apis/LedgerEntryApi.ts
 apis/OtherApi.ts

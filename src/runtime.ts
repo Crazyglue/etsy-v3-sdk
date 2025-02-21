@@ -13,7 +13,7 @@
  */
 
 
-export const BASE_PATH = "https://openapi.etsy.com".replace(/\/+$/, "");
+export const BASE_PATH = "https://api.etsy.com".replace(/\/+$/, "");
 
 export interface ConfigurationParameters {
     basePath?: string; // override base path

@@ -1,15 +1,16 @@
 name: Publish to npm
 
 on:
-  push:
-    branches:
-      - main  # Only run this workflow on pushes to main (adjust if needed)
+  workflow_dispatch:
 
 jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
+      pull-requests: write
+      id-token: write
 
     steps:
       - name: Check out repository

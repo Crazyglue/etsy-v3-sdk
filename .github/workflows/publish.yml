@@ -6,8 +6,10 @@ on:
       - main  # Only run this workflow on pushes to main (adjust if needed)
 
 jobs:
-  publish:
+  release:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Check out repository
